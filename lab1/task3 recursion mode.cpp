@@ -4,7 +4,7 @@ using namespace std;
 
 int Bin_search(int a[], int l, int r, int x)
 {
-    int mid = l + r;
+    int mid = (l + r)/2;
 
     if (l > r) return -1;
 
