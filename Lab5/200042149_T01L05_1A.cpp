@@ -35,7 +35,7 @@ void heapSort(int arr[], int n)
 
 void Build_Max_Heap(int arr[], int n)
 {
-    for(int i = n / 2 - 1; i >= 0; i--)
+    for(int i = n/2 - 1; i >= 0; i--)
         heapify(arr, n, i);
 }
   
@@ -55,12 +55,6 @@ int main()
     for(int i=0; i<n; i++)
         cin>>a[i];
 
-    heapSort(a, n);
-  
-    cout << "Sorted array is \n";
-    printArray(a, n);
-
-    cout<<endl<<endl;
     Build_Max_Heap(a, n);
     printArray(a, n);
 }
