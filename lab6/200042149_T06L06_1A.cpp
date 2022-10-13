@@ -47,7 +47,7 @@ public:
             {
                 if(root->data > ans)
                     ans = root->data;
-                if(root->data < h)
+                if(root->data > h)
                     root = root->left;
                 else
                     root = root->right;
